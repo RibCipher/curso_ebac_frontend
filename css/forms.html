@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Formulários</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+  </head>
+  <body>
+    <h1>Formulários</h1>
+    <form>
+      <label for="text">Seu nome:</label>
+      <input id="text" type="text" placeholder="Ex.: Maria de Souza"/> <br />
+      <label style="color:red" for="email">Seu e-mail:</label>
+      <input id="email" type="email" placeholder="Ex.: email@email.com" /> <br />
+      <label for="tel">Seu telefone:</label>
+      <input id="tel" type="tel" placeholder="Ex.: 11 911112222" /> <br />
+      <label for="number">Número:</label>
+      <input id="number" type="number" placeholder="Min: 2 | Max: 10" max="10" min="2" step="2"/> <br />
+      <input type="file" /> <br />
+      <input type="color" /> <br />
+      <input id="checkbox-termos" type="checkbox" /> <label for="checkbox-termos">Aceito os termos</label>
+      <p>
+        Qual a sua cor favorita?
+      </p>
+      <input type="radio" name="cor_favorita" id="cor_vermelha" /> <label for="cor_vermelha">Vermelho</label>
+      <input type="radio" name="cor_favorita" id="cor_verde" /> <label for="cor_verde">Verde</label>
+      <input type="radio" name="cor_favorita"id="cor_azul" /> <label for="cor_azul">Azul</label>
+      <br> />
+      <label>Qual seu filme favorito?</label> <br />
+      <select multiple>
+        <option>Filme A</option>
+        <option>Filme B</option>
+        <option>Filme C</option>
+      </select>
+      <br />
+      <label for="textarea_opinion">Deixe um comentário</label> <br /> <textarea id="textarea_opinion"></textarea> <br />
+      <button class="botaoenvio" type="submit">Enviar</button>
+      <button class="botaolimpar" type="reset">Limpar</button>
+      <br />
+      <label for="user">Usuário: </label>
+      <input id="user" type="text"/>
+      <br />
+      <label for="password">Senha: </label>
+      <input id="password" type="password" />
+   </form>
+  </body>
+</html>
