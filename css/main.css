@@ -1,68 +1,113 @@
+/* 
+  RESET GLOBAL
+  Ajusta a box-sizing e remove as margens e paddings padrões
+*/
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+/*
+  HEADER
+  A .container dentro do header usa Flexbox para alinhar os itens (título e menu) na horizontal
+*/
 header .container {
   display: flex;
-  aling-items: center;
+  align-items: center;
   justify-content: space-between;
 } 
 
+/*
+  Define a cor de fundo e cor de texto para o header.
+  Padding vertical de 16px.
+*/
 body > header {
   background-color: #2f3640;
   padding: 16px 0;
   color: #f5f6fa;
-
 }
 
+/*
+  MENU / LISTA
+  Deixa itens inline e estiliza fonte e peso.
+*/
 header li {
   display: inline;
-  font-family: Arial; Helvetica; sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   margin-left: 16px;
 }
 
+/*
+  Links do menu
+  Cor branca e remoção do sublinhado
+*/
 header li a {
   color: #f5f6fa;
   text-decoration: none;
 
 }
 
+/*
+  .container GERAL
+  Limita a largura máxima em 1366px e adiciona um padding lateral para dar espaço nas bordas.
+*/
 .container {
-  widht: 1366px;
+  max-width: 1366px;
   margin: 0 auto;
+  padding: 0 16px;
 }
 
+/*
+  SEÇÃO DE ARTIGOS
+  Exibe artigos em Flexbox, permite quebra de linha e justifica espaçamento
+*/
 .articles {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
+/*
+  As imagens dos artigos ocupam 100% da largura do container do article
+*/
 .articles article img {
-  /*height: 180px;*/
   width: 100%;
 }
 
+/*
+  Cada article ocupa 30% da área, ideal para 3 colunas
+*/
 .articles article {
   width: 30%;
 }
 
+/*
+  Ajuste de padding para seções gerais
+*/
 section {
   padding: 16px 0;
 }
 
+/*
+  Margem inferior para o título (h2) e cada article
+*/
 section h2, .articles article {
   margin-bottom: 16px;
 }
 
+/* 
+  Ajuste específico para o subtítulo h3 dentro do article
+*/
 .articles article h3 {
   margin-top: 8px;
   margin-bottom: 8px;
 }
 
+/* 
+  Estilo do link do article (como um botão)
+*/
 .articles article a {
   background-color: blue;
   color: #fff;
@@ -73,22 +118,38 @@ section h2, .articles article {
   margin-top: 8px;
 }
 
+/* 
+  Hover no link, sublinha ao passar o mouse 
+*/
 .articles article a:hover {
   text-decoration: underline;
 }
 
+/*
+   Define a mesma fonte para <p> e <a> dentro de cada article
+*/
 .articles article p, .articles article a {
-  font-family: Arial; Helvetica; sans-serif;
+  font-family: Arial, Helveticaa sans-serif;
 }
 
+/* 
+  Tamanho da fonte do h3 dentro do article
+*/
 .articles article h3 {
   font-size: 24px;
 }
 
+/* 
+  Tamanho da fonte do h2 nas sections
+*/
 section h2 {
   font-size: 32px;
 }
 
+/* 
+  SEÇÃO #sports (Esportes)
+  Fundo verde claro e links em verde escuro
+*/
 #sports {
   background-color: rgba(0, 255, 0, 0.1);
 }
@@ -97,10 +158,38 @@ section h2 {
   background-color: #009432;
 }
 
+/* 
+  SEÇÃO #economy (Economia)
+  Fundo amarelo claro e botões laranja
+*/
 #economy {
   background-color: #f8f59f;
 }
 
 #economy .articles article a {
   background-color: #ff9f1a;
+}
+
+/* 
+  SEÇÃO #technology (Tecnologia)
+  Fundo azul claro e botões azuis
+*/
+#technology {
+  background-color: #ADD8E6;
+}
+
+#technology .articles a {
+  background-color: #0000ff;
+}
+
+/*
+  SEÇÃO #entertainment (Entretenimento)
+  Fundo rosa claro e botões violeta
+*/
+#entertainment {
+  background-color: rgb(255, 182, 193);
+}
+
+#entertainment .articles a {
+  background-color: rgb(170, 51, 106);
 }
