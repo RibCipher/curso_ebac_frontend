@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*
+ Configura a fonte dos títulos h1 do header e dos títulos h2 do section em Bungee
+*/
+header,
+section h2 {
+  font-family: "Bungee", sans-serif;
+}
+
+/*
+ Configura a fonte dos textos em body em Roboto
+*/
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/*
+  Adiciona 16 pixels de espaçamento interno no cabeçalho, troca a cor do fundo para azul e a cor dos textos para branco
+*/
+header {
+  padding: 16px 0;
+  background-color: #182C61;
+  color: #ecf0f1;
+}
+
+/*
+ Estiliza o peso da fonte dos títulos de h1 do header e h2 do section em "normal"
+*/
+header h1,
+section h2 {
+  font-weight: normal;
+}
+/*
+  Alinha as seções uma ao lado da outra, adiciona uma margem na esquerda de 16 pixels e colocar a cor da fonte dos textos em branco.
+*/
+header nav li {
+  display: inline;
+  margin-left: 16px;
+  color: #ecf0f1
+  font-size: 18px;
+}
+
+/*
+  Alinha as seções uma ao lado da outra, adiciona uma margem na esquerda de 16 pixels e colocar a cor da fonte dos textos em branco. É necessário repetir os mesmos atributos anteriores para a tag dos links.
+*/
+header nav li a {
+  display: inline;
+  margin-left: 16px;
+  color: #ecf0f1;
+  text-decoration: none;
+}
+
+/*
+ Na classe .container, limita a largura máxima dos elementos em 1200 pixels, informa para usar a largura em 100% e a margem das laterais em automático.
+*/
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/*
+  Na classe .container, apenas do header e no section, define o display como flexível, alinha os itens ao centro e deixar eles com um espaço entre ambos.
+*/
+header .container,
+section .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*
+ Na classe .brands-list, limita o tamanho das imagens a 24 pixels.
+*/
+.brands-list img {
+  height: 24px;
+}
+
+/*
+ Na classe brands-list, posiciona os elementos da lista ordenada um ao lado do outro (inline).
+*/
+.brands-list li {
+  display: inline;
+  margin-right: 8px;
+}
+
+/*
+  Alinha os elementos da classe container, da section, de modo flexível ao começo do container.
+*/
+section .container {
+  align-items: flex-start;
+}
+
+/*
+  Adiciona um espaçamento interno de 24 px nos lados superiores e inferiores e estiliza a fonte dos textos na cor azul.
+*/
+section {
+  padding: 24px 0;
+  color: #182C61
+}
+
+/*
+  Insere uma margem inferior no título h2 da section
+*/
+section h2 {
+  margin-bottom: 16px;
+}
+
+/*
+  Insere uma margem inferior nos parágrafos (tag p)
+*/
+section p {
+  margin-bottom: 8px;
+}
+
+/*
+  Insere uma margem na direita da imagem com o id "storeFront"
+*/
+#storeFront {
+  margin-right: 32px;
+}
