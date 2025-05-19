@@ -8,8 +8,10 @@
  Configura a fonte dos títulos h1 do header e dos títulos h2 do section em Bungee
 */
 header,
-section h2 {
+section h2,
+section h3 {
   font-family: "Bungee", sans-serif;
+  font-weight: normal;
 }
 
 /*
@@ -28,13 +30,7 @@ header {
   color: #ecf0f1;
 }
 
-/*
- Estiliza o peso da fonte dos títulos de h1 do header e h2 do section em "normal"
-*/
-header h1,
-section h2 {
-  font-weight: normal;
-}
+
 /*
   Alinha as seções uma ao lado da outra, adiciona uma margem na esquerda de 16 pixels e colocar a cor da fonte dos textos em branco.
 */
@@ -123,4 +119,42 @@ section p {
 */
 #storeFront {
   margin-right: 32px;
+}
+
+/*
+  Limita o tamanho das imagens em 24 pixels de altura, modificando automaticamente a largura delas para manter a proporção
+*/
+.socialLinks img {
+  height: 24px;
+}
+
+.socialLinks li {
+  display: inline;
+  margin-right: 8px;
+}
+
+.socialLinks a {
+  text-decoration: none;
+}
+
+#contact .container {
+  display: block;
+
+.contactMethods {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+form input,
+form textarea,
+form button{
+  display: block;
+  width: 320px;
+  margin-bottom: 8px;
+  padding: 8px;
+}
+
+form textarea {
+  resize: none;
 }
